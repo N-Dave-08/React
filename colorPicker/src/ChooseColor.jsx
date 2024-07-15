@@ -3,9 +3,9 @@ import styles from "./Box/Box.module.css"
 
 function ChooseColor() {
 
-    const [color, setColor] = useState("#757575");
+    const [color, setColor] = useState("#FFFFFF");
     const [radius, setRadius] = useState("10px");
-    const [shadowColor, setshadowColor] = useState("#757575");
+    const [shadowColor, setshadowColor] = useState("#dbdbdb");
     const [shadowHorizontal, setshadowHorizontal] = useState("0px");
     const [shadowVertical, setshadowVertical] = useState("0px");
     const [shadowBlur, setshadowBlur] = useState("30px");
@@ -24,7 +24,7 @@ function ChooseColor() {
 
             <div className={styles.main}>
                 <div className={styles.indicator}>
-                    <p>Selected Color: {color}</p>
+                    <p>Background Color: {color}</p>
                     <input type="color" value={color} onChange={(event) => setColor(event.target.value)} />
                 </div>
                 <div className={styles.indicator}>
@@ -32,7 +32,7 @@ function ChooseColor() {
                     <input type="range" value={parseInt(radius)} onChange={(event) => setRadius(`${event.target.value}px`)} />
                 </div>
                 <div className={styles.indicator}>
-                    <p>Shadow Color: {color}</p>
+                    <p>Shadow Color: {shadowColor}</p>
                     <input type="color" value={shadowColor} onChange={(event) => setshadowColor(event.target.value)} />
                 </div>
                 <div className={styles.indicator}>
