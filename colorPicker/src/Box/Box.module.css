@@ -1,4 +1,13 @@
 .box {
     width: 200px;
     height: 200px;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+}
+
+.indicator {
+    margin: 20px;
 }
