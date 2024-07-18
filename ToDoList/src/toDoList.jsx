@@ -18,16 +18,20 @@ function ToDoList() {
 
     return (
         <>
-            <h1>To-do List</h1>
-            <input type="text" id="" value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="Enter a task"/>
-            <button onClick={addTask}>Add</button>
-            <ul>
-                {task.map((task, index) =>
-                    <li key={index}>
-                        {task}
-                        <button onClick={() => (removeTask(index))}>Delete</button>
-                    </li>)}
-            </ul>
+            <main>
+                <h1>To-do List</h1>
+                <div className="add-task">
+                    <input type="text" id="" value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="Enter a task" />
+                    <button onClick={addTask}>Add</button>
+                </div>
+                <ul>
+                    {task.map((task, index) =>
+                        <li key={index}>
+                            {task}
+                            <button onClick={() => (removeTask(index))}>Delete</button>
+                        </li>)}
+                </ul>
+            </main>
         </>
     );
 }
