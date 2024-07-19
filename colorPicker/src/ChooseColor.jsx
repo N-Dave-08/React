@@ -1,14 +1,16 @@
 import React, { useState } from "react"
 import styles from "./Box/Box.module.css"
 
-function ChooseColor() {
+function ChooseColor(props) {
 
-    const [color, setColor] = useState("#FFFFFF");
-    const [radius, setRadius] = useState("10px");
-    const [shadowColor, setshadowColor] = useState("#dbdbdb");
-    const [shadowHorizontal, setshadowHorizontal] = useState("0px");
-    const [shadowVertical, setshadowVertical] = useState("0px");
-    const [shadowBlur, setshadowBlur] = useState("30px");
+    const {
+        color, setColor,
+        radius, setRadius,
+        shadowColor, setshadowColor,
+        shadowHorizontal, setshadowHorizontal,
+        shadowVertical, setshadowVertical,
+        shadowBlur, setshadowBlur,
+    } = props;
 
     return (
         <>
