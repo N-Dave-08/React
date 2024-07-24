@@ -1,0 +1,13 @@
+
+.clockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    color: white;
+    font-weight: bold;
+    font-size: 6rem;
+    text-shadow:  5px 5px 5px #0000003f;
+}
