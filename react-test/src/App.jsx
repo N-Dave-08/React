@@ -1,9 +1,13 @@
-import Test from "./assets/Test"
+import { Test } from "./Test";
 
-function App() {
-  return(
-    <Test></Test>
+export default function App() {
+
+
+  return (
+    <>
+      <Test />
+    </>
   );
 }
 
-export default App
+
