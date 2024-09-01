@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-export default function Tasks({ index, name, onDelete }) {
+export const Tasks = ({name, onDelete}) => {
   return (
-    <li>
-      {name} <button onClick={onDelete}>x</button>
-    </li>
-  );
+    <li>{name} <button onClick={onDelete}>x</button></li>
+  )
 }
