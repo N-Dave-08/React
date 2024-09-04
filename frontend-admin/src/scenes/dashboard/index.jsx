@@ -48,7 +48,7 @@ const Dashboard = () => {
         {/* ROW 1 */}
         <Box
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -60,14 +60,14 @@ const Dashboard = () => {
             increase="+14%"
             icon={
               <EmailIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[200], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -79,14 +79,14 @@ const Dashboard = () => {
             increase="+21%"
             icon={
               <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[200], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -98,14 +98,14 @@ const Dashboard = () => {
             increase="+5%"
             icon={
               <PersonAddIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[200], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           display="flex"
           alignItems="center"
           justifyContent="center"
@@ -117,7 +117,7 @@ const Dashboard = () => {
             increase="+43%"
             icon={
               <TrafficIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[200], fontSize: "26px" }}
               />
             }
           />
@@ -127,7 +127,7 @@ const Dashboard = () => {
         <Box
           gridColumn="span 8"
           gridRow="span 2"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
         >
           <Box
             mt="25px"
@@ -167,7 +167,7 @@ const Dashboard = () => {
         <Box
           gridColumn="span 4"
           gridRow="span 2"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           overflow="auto"
         >
           <Box
@@ -219,7 +219,7 @@ const Dashboard = () => {
         <Box
           gridColumn="span 4"
           gridRow="span 2"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
@@ -245,7 +245,7 @@ const Dashboard = () => {
         <Box
           gridColumn="span 4"
           gridRow="span 2"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
         >
           <Typography
             variant="h5"
@@ -261,7 +261,7 @@ const Dashboard = () => {
         <Box
           gridColumn="span 4"
           gridRow="span 2"
-          backgroundColor={colors.primary[400]}
+          backgroundColor={colors.grey[900]}
           padding="30px"
         >
           <Typography
