@@ -11,10 +11,10 @@ export default function FormikExample() {
 
   const [step, setStep] = useState(1)
   const isLastStep = step === formikSchemas.length
-  const handleNext = (values) => {
+  const handleNext = () => {
     setStep(step + 1)
   }
-  const handlePrev = (values) => {
+  const handlePrev = () => {
     setStep(step - 1)
   }
   const handleSubmit = async (values) => {
