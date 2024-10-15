@@ -11,19 +11,21 @@ export default function FormikExample() {
 
   const [step, setStep] = useState(1)
   const isLastStep = step === formikSchemas.length
-  const handleNext = () => {
-    setStep(step + 1)
-  }
-  const handlePrev = () => {
-    setStep(step - 1)
-  }
-  const handleSubmit = async (values) => {
-
-    // just mimick fetching data
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    isLastStep ? alert(JSON.stringify(values)) : handleNext(values)
-  }
+  const handleNext = (setTouched) => {
+    setStep(step + 1);
+    setTouched({});
+};
+  const handlePrev = (setTouched) => {
+    setStep(step - 1);
+    setTouched({});
+};
+  const handleSubmit = (values, { setTouched }) => {
+    if (isLastStep) {
+        alert(JSON.stringify(values));
+    } else {
+        handleNext(setTouched);
+    }
+};
 
   return (
     <div>
