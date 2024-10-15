@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-import Tasks from './Tasks';
 import { addTask } from '../actions/addTask';
 import { deleteTask } from '../actions/deleteTask';
+import { dummyList } from '../data/dummyData';
 
 export const Index = () => {
 
-  const [tasks, setTasks] = useState([
-    { id: 1, name: "make sandwich" },
-    { id: 2, name: "clean the toilet" },
-    { id: 3, name: "read books" },
-  ]);
+  const [tasks, setTasks] = useState(dummyList);
 
   const [inputValue, setInputValue] = useState("");
 
@@ -27,10 +23,12 @@ export const Index = () => {
       </button>
       <ul>
         {tasks.map((task, index) => (
-          <Tasks
+          <li
             key={task.id}
-            name={task.name}
-            onDelete={() => deleteTask(tasks, setTasks, index)} />
+            >
+            {task.name}
+            <button onClick={() => deleteTask(tasks, setTasks, index)}>x</button>
+             </li>
         ))}
       </ul>
     </div>
